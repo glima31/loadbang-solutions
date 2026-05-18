@@ -1,0 +1,7 @@
+#N canvas 827 239 734 565 12;
+#X obj 43 93 expr pow($f1 \, 2 + $f1);
+#X floatatom 43 155 5 0 0 0 - - - 12;
+#X text 92 63 y = x^(2+x);
+#X floatatom 43 28 5 0 0 0 - - - 12;
+#X connect 0 0 1 0;
+#X connect 3 0 0 0;
