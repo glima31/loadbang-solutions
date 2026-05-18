@@ -1,4 +1,4 @@
-#N canvas 827 239 734 565 12;
+#N canvas 1920 28 1920 1018 12;
 #X obj 399 461 dac~;
 #X obj 323 253 random 800;
 #X obj 456 253 random 800;
@@ -6,10 +6,11 @@
 #X obj 456 303 + 200;
 #X obj 323 348 osc~;
 #X obj 456 348 osc~;
-#X obj 409 125 tgl 25 0 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 409 73 tgl 25 0 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 399 405 *~;
-#X obj 323 185 tempo 360;
 #X obj 409 185 * 0.5;
+#X obj 323 185 metro;
+#X msg 239 127 tempo 8 persec;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
@@ -18,8 +19,10 @@
 #X connect 6 0 8 0;
 #X connect 7 0 9 0;
 #X connect 7 0 10 0;
+#X connect 7 0 11 0;
 #X connect 8 0 0 0;
 #X connect 8 0 0 1;
-#X connect 9 0 1 0;
-#X connect 9 0 2 0;
-#X connect 10 0 8 1;
+#X connect 9 0 8 1;
+#X connect 10 0 1 0;
+#X connect 10 0 2 0;
+#X connect 11 0 10 0;
